@@ -5,16 +5,16 @@ import './Navigation.css';
 function Navigation() {
   return (
     <nav className="navigation">
-      <NavLink to="/html-practice" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} end>
+      <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} end>
         Home
       </NavLink>
-      <NavLink to="/html-practice/about" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+      <NavLink to="/about" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
         About Me
       </NavLink>
-      <NavLink to="/html-practice/personal" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+      <NavLink to="/personal" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
         Personal Life
       </NavLink>
-      <NavLink to="/html-practice/professional" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+      <NavLink to="/professional" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
         Professional Life
       </NavLink>
     </nav>
