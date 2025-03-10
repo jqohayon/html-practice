@@ -1,3 +1,21 @@
+# React Quirky Clubhouse
+
+A React-based website showcasing my personal and professional life.
+
+## Features
+- Modern React components
+- Jest testing setup
+- GitHub Actions deployment
+- Responsive design
+- Source Control with Git
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies with `npm install`
+3. Run development server with `npm run dev`
+4. Run tests with `npm test`
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
