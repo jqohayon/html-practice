@@ -1,6 +1,6 @@
 .doc-container {
   width: 100%;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 30px;
   background: linear-gradient(135deg, #e6e6fa 0%, #f0f8ff 100%);
@@ -60,10 +60,20 @@
 
 .tools-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
   margin-top: 25px;
   padding: 10px;
+}
+
+@media (max-width: 1024px) {
+  .tools-section {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  .doc-container {
+    max-width: 800px;
+  }
 }
 
 .tool-category {
@@ -165,14 +175,6 @@
 
 .tool-category li:hover {
   transform: translateX(5px);
-}
-
-.tools-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-  margin-top: 25px;
-  padding: 10px;
 }
 
 @keyframes float {

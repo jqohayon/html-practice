@@ -22,6 +22,12 @@ function Navigation() {
         About Me
       </NavLink>
       <NavLink 
+        to="/jr-engineer" 
+        className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+      >
+        Jr Engineer
+      </NavLink>
+      <NavLink 
         to="/resources" 
         className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
       >

@@ -8,6 +8,7 @@ import LeveragingAI from './components/career/LeveragingAI';
 import CareerPaths from './components/career/CareerPaths';
 import SQLPython from './components/career/SQLPython';
 import Github from './components/career/Github';
+import JrEngineer from './components/career/JrEngineer';
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/jr-engineer" element={<JrEngineer />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/leveraging-ai" element={<LeveragingAI />} />
           <Route path="/career-paths" element={<CareerPaths />} />
