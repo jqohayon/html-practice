@@ -5,7 +5,7 @@ import Home from './components/Home';
 import AboutPage from './components/AboutPage';
 import PersonalLife from './components/PersonalLife';
 import ProfessionalLife from './components/ProfessionalLife';
-import './index.css';
+import './App.css';
 
 function App() {
   // Get the base path from Vite's environment variable, removing trailing slash
