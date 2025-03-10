@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Home from './components/Home';
 import AboutPage from './components/AboutPage';
@@ -8,21 +8,23 @@ import ProfessionalLife from './components/ProfessionalLife';
 import './index.css';
 
 function App() {
+  // Get the base path from Vite's environment variable, removing trailing slash
+  const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
+
   return (
-    <Router>
-      <div className="app">
-        <Navigation />
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/personal" element={<PersonalLife />} />
-            <Route path="/professional" element={<ProfessionalLife />} />
-          </Routes>
-        </main>
-      </div>
-    </Router>
+    <div className="app">
+      <Navigation />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/personal" element={<PersonalLife />} />
+          <Route path="/professional" element={<ProfessionalLife />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </main>
+    </div>
   );
 }
 
-export default App; 
+export default App;
