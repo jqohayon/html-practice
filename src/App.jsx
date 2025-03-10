@@ -8,9 +8,6 @@ import ProfessionalLife from './components/ProfessionalLife';
 import './App.css';
 
 function App() {
-  // Get the base path from Vite's environment variable, removing trailing slash
-  const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
-
   return (
     <div className="app">
       <Navigation />
