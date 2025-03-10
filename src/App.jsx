@@ -8,17 +8,20 @@ import ProfessionalLife from './components/ProfessionalLife';
 import './index.css';
 
 function App() {
+  // Get the base path from Vite's environment variable
+  const basePath = import.meta.env.BASE_URL;
+
   return (
     <div className="app">
       <Navigation />
       <main>
         <Routes>
-          <Route path="/html-practice" element={<Home />} />
-          <Route path="/html-practice/about" element={<AboutPage />} />
-          <Route path="/html-practice/personal" element={<PersonalLife />} />
-          <Route path="/html-practice/professional" element={<ProfessionalLife />} />
-          <Route path="/" element={<Navigate to="/html-practice" replace />} />
-          <Route path="*" element={<Navigate to="/html-practice" replace />} />
+          <Route path={basePath} element={<Home />} />
+          <Route path={`${basePath}about`} element={<AboutPage />} />
+          <Route path={`${basePath}personal`} element={<PersonalLife />} />
+          <Route path={`${basePath}professional`} element={<ProfessionalLife />} />
+          <Route path="/" element={<Navigate to={basePath} replace />} />
+          <Route path="*" element={<Navigate to={basePath} replace />} />
         </Routes>
       </main>
     </div>
