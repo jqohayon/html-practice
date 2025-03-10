@@ -13,11 +13,12 @@ function App() {
       <Navigation />
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/personal" element={<PersonalLife />} />
-          <Route path="/professional" element={<ProfessionalLife />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="/html-practice" element={<Home />} />
+          <Route path="/html-practice/about" element={<AboutPage />} />
+          <Route path="/html-practice/personal" element={<PersonalLife />} />
+          <Route path="/html-practice/professional" element={<ProfessionalLife />} />
+          <Route path="/" element={<Navigate to="/html-practice" replace />} />
+          <Route path="*" element={<Navigate to="/html-practice" replace />} />
         </Routes>
       </main>
     </div>
