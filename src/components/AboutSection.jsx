@@ -6,7 +6,7 @@ function AboutSection() {
     <section>
       <h2>About Me</h2>
       <p>
-        First of all: This is <mark><b>Peepo</b></mark>. I <em>love</em> peepo! 
+        First: This is <mark><b>Peepo</b></mark>. I <em>love</em> peepo! 
         You'll see a lot of Peepo on this website, and he is also happy to see you here, too.
       </p>
       <img src={peepoImage} alt="Peepo" width="280" height="200" />
