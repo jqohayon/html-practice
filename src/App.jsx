@@ -3,8 +3,11 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Home from './components/Home';
 import AboutPage from './components/AboutPage';
-import PersonalLife from './components/PersonalLife';
-import ProfessionalLife from './components/ProfessionalLife';
+import Resources from './components/career/Resources';
+import LeveragingAI from './components/career/LeveragingAI';
+import CareerPaths from './components/career/CareerPaths';
+import SQLPython from './components/career/SQLPython';
+import Github from './components/career/Github';
 import './App.css';
 
 function App() {
@@ -15,8 +18,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/personal" element={<PersonalLife />} />
-          <Route path="/professional" element={<ProfessionalLife />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/leveraging-ai" element={<LeveragingAI />} />
+          <Route path="/career-paths" element={<CareerPaths />} />
+          <Route path="/sql-python" element={<SQLPython />} />
+          <Route path="/github" element={<Github />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>

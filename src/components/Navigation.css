@@ -55,4 +55,42 @@
   color: white;
   border-color: rgba(106, 27, 154, 0.5);
   box-shadow: 0 4px 15px rgba(106, 27, 154, 0.2);
+}
+
+.career-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.career-dropdown .nav-link {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  padding: 8px 0;
+  z-index: 1000;
+}
+
+.dropdown-link {
+  color: #333;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.2s;
+}
+
+.dropdown-link:hover {
+  background-color: #f5f5f5;
+}
+
+.dropdown-link.active {
+  background-color: #e0e0e0;
+  color: #000;
 } 

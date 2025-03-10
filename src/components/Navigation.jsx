@@ -22,16 +22,34 @@ function Navigation() {
         About Me
       </NavLink>
       <NavLink 
-        to="/personal" 
+        to="/resources" 
         className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
       >
-        Personal Life
+        Resources
       </NavLink>
       <NavLink 
-        to="/professional" 
+        to="/leveraging-ai" 
         className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
       >
-        Professional Life
+        Leveraging AI
+      </NavLink>
+      <NavLink 
+        to="/career-paths" 
+        className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+      >
+        Career Paths
+      </NavLink>
+      <NavLink 
+        to="/sql-python" 
+        className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+      >
+        SQL & Python
+      </NavLink>
+      <NavLink 
+        to="/github" 
+        className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+      >
+        Github
       </NavLink>
     </nav>
   );
