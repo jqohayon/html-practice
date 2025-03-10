@@ -4,73 +4,84 @@ import '../GoogleDocViewer.css';
 function Resources() {
   return (
     <div className="doc-container">
-      <h2>Resources</h2>
+      <h2>Additional Resources</h2>
       <div className="content-section">
-        <h3>Learning Platforms</h3>
-        <ul>
-          <li>
-            <a href="https://www.coursera.org/" target="_blank" rel="noopener noreferrer">
-              Coursera
-            </a>
-            - Offers courses from top universities and companies
-          </li>
-          <li>
-            <a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer">
-              Udemy
-            </a>
-            - Wide range of practical courses
-          </li>
-          <li>
-            <a href="https://www.edx.org/" target="_blank" rel="noopener noreferrer">
-              edX
-            </a>
-            - University-level courses
-          </li>
-        </ul>
+        <div className="emphasis-box">
+          <p><strong>Welcome to my curated collection of resources!</strong></p>
+          <p>These are tools and materials that I actively use and would love to discuss and collaborate on.</p>
+        </div>
 
-        <h3>Technical Resources</h3>
-        <ul>
-          <li>
-            <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">
-              W3Schools
-            </a>
-            - Web development tutorials
-          </li>
-          <li>
-            <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">
-              MDN Web Docs
-            </a>
-            - Comprehensive web development documentation
-          </li>
-          <li>
-            <a href="https://stackoverflow.com/" target="_blank" rel="noopener noreferrer">
-              Stack Overflow
-            </a>
-            - Community-driven Q&A for developers
-          </li>
-        </ul>
+        <section className="tools-section">
+          <div className="tool-category">
+            <h4>Essential Reading Materials</h4>
+            <ul>
+              <li>
+                <strong>Modern Software Engineering</strong> by David Farley
+                <p>A foundational text covering golden standards, mindset development, and practical approaches. Highly digestible and impactful.</p>
+              </li>
+              <li>
+                <strong>Martin Fowler's Works</strong>
+                <ul>
+                  <li>Refactoring</li>
+                  <li>The Practical Test Pyramid</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Robert Martin's Series</strong>
+                <ul>
+                  <li>The Clean Coder</li>
+                  <li>Clean Code</li>
+                </ul>
+              </li>
+              <li><strong>Learning Domain-Driven Design</strong> by Vlad Knononov</li>
+              <li><strong>Design Patterns Catalogue</strong></li>
+              <li><strong>Recommended Course:</strong> Manik on Udemy</li>
+            </ul>
+          </div>
 
-        <h3>Practice Platforms</h3>
-        <ul>
-          <li>
-            <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer">
-              LeetCode
-            </a>
-            - Coding practice and interview preparation
-          </li>
-          <li>
-            <a href="https://www.hackerrank.com/" target="_blank" rel="noopener noreferrer">
-              HackerRank
-            </a>
-            - Programming challenges and competitions
-          </li>
-          <li>
-            <a href="https://www.codecademy.com/" target="_blank" rel="noopener noreferrer">
-              Codecademy
-            </a>
-            - Interactive coding lessons
-          </li>
-        </ul>
+          <div className="tool-category">
+            <h4>GitHub Mastery</h4>
+            <ul>
+              <li>Enterprise Branching Strategies
+                <ul>
+                  <li>Workflow fundamentals</li>
+                  <li>Merge vs Rebase</li>
+                  <li>Pull vs Fetch</li>
+                </ul>
+              </li>
+              <li>Kevin Stratvert's GitHub Guides</li>
+              <li>Building your coding activity</li>
+              <li>Project showcase best practices</li>
+            </ul>
+          </div>
+
+          <div className="tool-category">
+            <h4>Professional Tech Stack</h4>
+            <ul>
+              <li><strong>ORM:</strong> Sequelize / TypeORM</li>
+              <li><strong>Logging:</strong> DataDog</li>
+              <li><strong>Containerization:</strong>
+                <ul>
+                  <li>Docker</li>
+                  <li>Kubernetes</li>
+                  <li>Rancher</li>
+                </ul>
+              </li>
+              <li><strong>Cloud Platform:</strong> AWS</li>
+              <li><strong>API Testing:</strong> Postman</li>
+            </ul>
+          </div>
+
+          <div className="tool-category">
+            <h4>AI Development Tools</h4>
+            <ul>
+              <li>VSCode with GitHub Copilot</li>
+              <li>Windsurf</li>
+              <li>Cursor</li>
+              <li><em>Check out the AI tab for detailed guides on leveraging these tools effectively!</em></li>
+            </ul>
+          </div>
+        </section>
       </div>
     </div>
   );
