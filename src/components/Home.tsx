@@ -1,8 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Home.css';
 import astronautImage from '../assets/images/astronaut.jpg';
 
 const Home: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="home">
@@ -12,7 +15,7 @@ const Home: React.FC = () => {
           This website briefly documents my journey transitioning from a non-technical background to becoming a software engineer. My hope is to create a full stack project, hence the name 'JacqStack' in the favicon. I hope you enjoy your stay, thank you for visiting today.
         </p>
         <button 
-          onClick={() => window.location.href = 'mailto:jqohayon@gmail.com?subject=Website%20Feedback'} 
+          onClick={() => navigate('/feedback')}
           style={{
             padding: '8px 20px',
             fontSize: '0.95rem',
