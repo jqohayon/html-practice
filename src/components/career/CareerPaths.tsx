@@ -1,7 +1,7 @@
 import React from 'react';
 import '../GoogleDocViewer.css';
 
-function CareerPaths() {
+const CareerPaths: React.FC = () => {
   return (
     <div className="doc-container">
       <h2>Career Paths</h2>

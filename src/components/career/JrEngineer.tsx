@@ -1,7 +1,7 @@
 import React from 'react';
 import '../GoogleDocViewer.css';
 
-function JrEngineer() {
+const JrEngineer: React.FC = () => {
   return (
     <div className="doc-container">
       <h2>Software Engineer</h2>
@@ -16,43 +16,20 @@ function JrEngineer() {
         <section className="tools-section">
           <div className="tool-category">
             <h4>JavaScript (JS)</h4>
-            <ul>
-              <li>
-                <strong>Recommended Resources</strong>
-                <ul>
-                  <li>Max's Course on Udemy</li>
-                  <li>W3 Schools
-                    <ul>
-                      <li>Online access</li>
-                      <li>No downloads required</li>
-                      <li>Completely free</li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+            <ul></ul>
           </div>
 
           <div className="tool-category">
             <h4>TypeScript (TS)</h4>
+            <div style={{ textAlign: 'center', marginBottom: '15px' }}>
+              <strong>Learning Journey</strong>
+            </div>
             <ul>
               <li>
-                <strong>Learning Resources</strong>
                 <ul>
-                  <li>TypeScript Playground
-                    <p>Program, run, and compile directly in your browser</p>
-                  </li>
-                  <li>TypeScript Handbook
-                    <p>Complete written documentation for self-paced learning</p>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <strong>Recommended Courses</strong>
-                <ul>
-                  <li>Manik on Udemy (37 Hours)</li>
-                  <li>Max on Udemy (22.5 Hours)</li>
-                  <li>W3 Schools - Free online resource</li>
+                  <li>Then I learned TS</li>
+                  <li>TS is the superscript of JS</li>
+                  <li>I took a class by Manik @ Udemy</li>
                 </ul>
               </li>
             </ul>
@@ -60,9 +37,11 @@ function JrEngineer() {
 
           <div className="tool-category">
             <h4>NestJS Framework</h4>
+            <div style={{ textAlign: 'center', marginBottom: '15px' }}>
+              <strong>Essential Resources</strong>
+            </div>
             <ul>
               <li>
-                <strong>Essential Resources</strong>
                 <ul>
                   <li>Tech Vision: NestJS Brief Intro Video</li>
                   <li>Official NestJS Documentation</li>
@@ -75,21 +54,17 @@ function JrEngineer() {
           <div className="tool-category">
             <h4>Data Structures & Algorithms (DSA)</h4>
             <ul>
-              <li>
-                <strong>Learning Platform</strong>
-                <ul>
-                  <li>W3 Schools - Comprehensive DSA coverage</li>
-                </ul>
-              </li>
+              <li>W3 Schools - Comprehensive DSA coverage</li>
             </ul>
           </div>
 
           <div className="tool-category">
             <h4>Building REST APIs</h4>
+            <div style={{ textAlign: 'center', marginBottom: '15px' }}>
+              <strong>Enterprise Skills</strong>
+            </div>
             <ul>
               <li>
-                <strong>Key Skills</strong>
-                <p>Focus on developing the ability to:</p>
                 <ul>
                   <li>Build functional APIs</li>
                   <li>Connect APIs to databases</li>

@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './GoogleSheetData.css';
 
-function GoogleSheetData() {
-  const [data, setData] = useState([]);
+interface SheetRow {
+  [key: string]: string | number;
+}
+
+const GoogleSheetData: React.FC = () => {
+  const [data, setData] = useState<SheetRow[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     // Replace this URL with your Google Sheet's JSON feed URL
@@ -19,7 +23,7 @@ function GoogleSheetData() {
         const jsonData = await response.json();
         setData(jsonData);
       } catch (err) {
-        setError(err.message);
+        setError(err instanceof Error ? err.message : 'An error occurred');
       } finally {
         setLoading(false);
       }
@@ -47,6 +51,6 @@ function GoogleSheetData() {
       </div>
     </div>
   );
-}
+};
 
 export default GoogleSheetData; 

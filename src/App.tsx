@@ -1,16 +1,15 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import Navigation from './components/Navigation';
+import Navigation from './components/layout/Navigation';
 import Home from './components/Home';
 import Resources from './components/career/Resources';
 import LeveragingAI from './components/career/LeveragingAI';
 import CareerPaths from './components/career/CareerPaths';
-import SQLPython from './components/career/SQLPython';
 import Github from './components/career/Github';
 import JrEngineer from './components/career/JrEngineer';
 import './App.css';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="app">
       <Navigation />
@@ -21,7 +20,6 @@ function App() {
           <Route path="/resources" element={<Resources />} />
           <Route path="/leveraging-ai" element={<LeveragingAI />} />
           <Route path="/career-paths" element={<CareerPaths />} />
-          <Route path="/sql-python" element={<SQLPython />} />
           <Route path="/github" element={<Github />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
@@ -30,4 +28,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; 

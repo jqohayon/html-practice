@@ -1,6 +1,6 @@
 import React from 'react';
 
-function AboutPage() {
+const AboutPage: React.FC = () => {
   return (
     <div className="doc-container">
       <h2>About Me</h2>

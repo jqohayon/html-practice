@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ReferencesSection() {
+const ReferencesSection: React.FC = () => {
   return (
     <section>
       <h2>Page References</h2>
@@ -13,6 +13,6 @@ function ReferencesSection() {
       </p>
     </section>
   );
-}
+};
 
 export default ReferencesSection; 

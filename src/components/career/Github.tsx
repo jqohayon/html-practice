@@ -1,7 +1,7 @@
 import React from 'react';
 import '../GoogleDocViewer.css';
 
-function Github() {
+const Github: React.FC = () => {
   return (
     <div className="doc-container">
       <h2>GitHub</h2>

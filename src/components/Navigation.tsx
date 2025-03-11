@@ -2,9 +2,9 @@ import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import './Navigation.css';
 
-function Navigation() {
+const Navigation: React.FC = () => {
   const location = useLocation();
-  const isActive = (path) => location.pathname === path;
+  const isActive = (path: string): boolean => location.pathname === path;
 
   return (
     <nav className="navigation">
@@ -37,13 +37,7 @@ function Navigation() {
         to="/career-paths" 
         className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
       >
-        Career Paths
-      </NavLink>
-      <NavLink 
-        to="/sql-python" 
-        className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
-      >
-        SQL & Python
+        Careers
       </NavLink>
       <NavLink 
         to="/github" 

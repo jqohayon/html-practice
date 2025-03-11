@@ -1,7 +1,7 @@
 import React from 'react';
 import '../GoogleDocViewer.css';
 
-function Option_2() {
+const Option_2: React.FC = () => {
   return (
     <div className="doc-container">
       <h2>Alternative Options</h2>

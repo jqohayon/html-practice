@@ -1,7 +1,7 @@
 import React from 'react';
 import '../GoogleDocViewer.css';
 
-function Resources() {
+const Resources: React.FC = () => {
   return (
     <div className="doc-container">
       <h2>Additional Resources</h2>

@@ -173,8 +173,7 @@
 }
 
 .emphasis-box li {
-  padding: 4px 0;
-  padding-left: 50px;
+  padding: 4px 0 4px 50px;
   font-size: 15px;
   color: #ffffff;
   position: relative;
@@ -187,11 +186,12 @@
 .emphasis-box li:before {
   content: "☁️";
   position: absolute;
-  left: 8px;
-  opacity: 0.9;
-  transform: scale(1.8);
+  left: 15px;
   top: 50%;
-  margin-top: -12px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  opacity: 0.7;
+  display: block;
 }
 
 .emphasis-box li:hover {
@@ -280,9 +280,8 @@
   text-align: left;
 }
 
-.tool-category li {
+.tool-category > ul > li {
   padding: 4px 0;
-  padding-left: 50px;
   font-size: 15px;
   color: #ffffff;
   position: relative;
@@ -292,18 +291,46 @@
   text-align: left;
 }
 
-.tool-category li:before {
+.tool-category > ul > li:before {
+  display: none;
+}
+
+.tool-category ul ul > li {
+  padding: 4px 0 4px 50px;
+  font-size: 15px;
+  color: #ffffff;
+  position: relative;
+  transition: transform 0.2s ease;
+  line-height: 1.4;
+  display: block;
+  text-align: left;
+}
+
+.tool-category ul ul > li:before {
   content: "☁️";
   position: absolute;
-  left: 8px;
-  opacity: 0.9;
-  transform: scale(1.8);
+  left: 15px;
   top: 50%;
-  margin-top: -12px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  opacity: 0.7;
+  display: block;
 }
 
 .tool-category li:hover {
   transform: translateX(5px);
+}
+
+/* Remove extra clouds from nested strong elements */
+.tool-category li strong:before {
+  display: none;
+  content: none;
+}
+
+/* Remove extra clouds from paragraphs within list items */
+.tool-category li p:before {
+  display: none;
+  content: none;
 }
 
 @keyframes float {
@@ -394,4 +421,34 @@ h4 {
   margin: 0 auto;
   max-width: 100%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.emphasis-box > ul > li {
+  padding: 4px 0 4px 50px;
+  font-size: 15px;
+  color: #ffffff;
+  position: relative;
+  transition: transform 0.2s ease;
+  line-height: 1.4;
+  display: block;
+  text-align: left;
+}
+
+.emphasis-box > ul > li:before {
+  content: "☁️";
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  opacity: 0.7;
+  display: block;
+}
+
+.emphasis-box ul ul li {
+  padding: 4px 0;
+}
+
+.emphasis-box ul ul li:before {
+  display: none;
 } 

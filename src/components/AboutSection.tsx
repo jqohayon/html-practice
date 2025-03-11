@@ -1,7 +1,7 @@
 import React from 'react';
 import peepoImage from '../assets/images/peepo_bio.webp';
 
-function AboutSection() {
+const AboutSection: React.FC = () => {
   return (
     <section>
       <h2>About Me</h2>
@@ -16,6 +16,6 @@ function AboutSection() {
       </blockquote>
     </section>
   );
-}
+};
 
 export default AboutSection; 

@@ -1,7 +1,7 @@
 import React from 'react';
 import './GoogleDocViewer.css';
 
-function GoogleDocViewer() {
+const GoogleDocViewer: React.FC = () => {
   return (
     <div className="doc-container">
       <iframe
