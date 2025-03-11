@@ -10,7 +10,7 @@ const Navigation: React.FC = () => {
         <FaHome size={24} />
       </NavLink>
       <NavLink to="/jr-engineer" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-        My Journey
+        Path
       </NavLink>
       <NavLink to="/leveraging-ai" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
         AI

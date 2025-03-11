@@ -6,11 +6,10 @@ const Home: React.FC = () => {
   return (
     <>
       <div className="home">
-        <h1>Welcome to My Journey</h1>
+        <h1>Welcome</h1>
         <img src={astronautImage} alt="Astronaut" className="astronaut-image" />
         <p>
-          This website documents my journey transitioning from a non-technical background to becoming a software engineer.
-          I hope my experiences and resources can help others on their own path to tech.
+          This website briefly documents my journey transitioning from a non-technical background to becoming a software engineer. My hope is to create a full stack project, hence the name 'JacqStack' in the favicon. I hope you enjoy your stay, thank you for visiting today.
         </p>
       </div>
     </>
