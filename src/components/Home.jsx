@@ -1,22 +1,39 @@
 import React from 'react';
-import peepoImage from '../assets/images/peepo_bio.webp';
+import astronautImage from '../assets/images/astronaut.jpg';
 
 function Home() {
   return (
-    <div className="home">
-      <h1>Quirky Clubhouse</h1>
-      <section>
-        <h2>Welcome!</h2>
-        <p>
-          First of all: This is <mark><b>Peepo</b></mark>. I <em>love</em> peepo! 
-          You'll see a lot of Peepo on this website, and he is also happy to see you here, too.
-        </p>
-        <img src={peepoImage} alt="Peepo" width="280" height="200" />
-        <blockquote>
-          <i>"Jacqueline is a French name that means "supplanter". It's the feminine version of the name Jacques, which comes from the Hebrew name Jacob."</i>
-          <p>My favorite color is <del>red</del> <ins>purple</ins>.</p>
-        </blockquote>
-      </section>
+    <div className="doc-container">
+      <h2>Jacqueline Ohayon</h2>
+      <div className="content-section">
+        <div className="emphasis-box">
+          <h4>Welcome!</h4>
+          <p>
+            Welcome to my digital space! I'm excited to share my journey with you.
+          </p>
+          <img 
+            src={astronautImage} 
+            alt="Astronaut floating in space" 
+            style={{ 
+              display: 'block', 
+              margin: '20px auto',
+              maxWidth: '100%',
+              height: 'auto',
+              borderRadius: '12px',
+              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)'
+            }} 
+          />
+        </div>
+
+        <div className="tool-category about-me-section">
+          <h4>About Me</h4>
+          <ul>
+            <li>I'm currently a Backend Software Engineer</li>
+            <li>I am working to gain fullstack experience</li>
+            <li>I hope you enjoy my page!</li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }

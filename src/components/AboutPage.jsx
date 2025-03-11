@@ -2,16 +2,37 @@ import React from 'react';
 
 function AboutPage() {
   return (
-    <div className="about-page">
-      <h1>About Me</h1>
-      <section>
-        <h2>My Story</h2>
-        <p>This is where you can add more detailed information about yourself, your interests, and what makes you unique!</p>
-      </section>
-      <section>
-        <h2>Hobbies & Interests</h2>
-        <p>Share your favorite activities, collections, or anything else that brings you joy!</p>
-      </section>
+    <div className="doc-container">
+      <h2>About Me</h2>
+      <div className="content-section">
+        <div className="tool-category">
+          <h4>My Story</h4>
+          <ul>
+            <li>Born and raised in a multicultural environment</li>
+            <li>Passionate about learning and personal growth</li>
+            <li>Always seeking new adventures and experiences</li>
+          </ul>
+        </div>
+
+        <div className="tool-category">
+          <h4>Hobbies & Interests</h4>
+          <ul>
+            <li>Coding and web development</li>
+            <li>Reading and creative writing</li>
+            <li>Exploring new technologies</li>
+            <li>Learning about different cultures</li>
+          </ul>
+        </div>
+
+        <div className="emphasis-box">
+          <h4>Fun Facts</h4>
+          <ul>
+            <li>Love trying new cuisines</li>
+            <li>Enjoy both city life and nature adventures</li>
+            <li>Always up for learning something new</li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }

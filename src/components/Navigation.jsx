@@ -16,16 +16,10 @@ function Navigation() {
         Home
       </NavLink>
       <NavLink 
-        to="/about" 
-        className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
-      >
-        About Me
-      </NavLink>
-      <NavLink 
         to="/jr-engineer" 
         className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
       >
-        Jr Engineer
+        My Journey
       </NavLink>
       <NavLink 
         to="/resources" 
@@ -37,7 +31,7 @@ function Navigation() {
         to="/leveraging-ai" 
         className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
       >
-        Leveraging AI
+        AI
       </NavLink>
       <NavLink 
         to="/career-paths" 

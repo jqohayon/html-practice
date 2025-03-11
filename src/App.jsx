@@ -2,7 +2,6 @@ import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Home from './components/Home';
-import AboutPage from './components/AboutPage';
 import Resources from './components/career/Resources';
 import LeveragingAI from './components/career/LeveragingAI';
 import CareerPaths from './components/career/CareerPaths';
@@ -18,7 +17,6 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutPage />} />
           <Route path="/jr-engineer" element={<JrEngineer />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/leveraging-ai" element={<LeveragingAI />} />

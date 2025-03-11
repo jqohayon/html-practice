@@ -7,145 +7,42 @@ function Github() {
       <h2>GitHub</h2>
       <div className="content-section">
         <div className="emphasis-box">
-          <p><strong>Start Using GitHub Early in Your Journey!</strong></p>
-          <p>Even if the initial setup feels challenging, it's crucial to begin using GitHub as soon as possible. 
-             Understanding the difference between Git and GitHub is your first step to success.</p>
+          <h4>What's the Difference?</h4>
+          <ul>
+            <li><strong>GitHub:</strong> Cloud-based platform that hosts Git repos; allows teams to collaborate, review code, & share projects; it provides extra features like PRs & CI/CD automation, Git alone does not have.</li>
+            <li><strong>Git:</strong> Version control system that runs on your local; tracks changes in your code & allows you to revert, branch, & merge different versions of a project. Git works without an internet connection.</li>
+          </ul>
         </div>
 
         <section className="tools-section">
           <div className="tool-category">
-            <h4>Core Concepts</h4>
-            <ul>
-              <li>
-                <strong>GitHub</strong>
-                <p>Cloud-based platform that hosts Git repositories, enabling:</p>
-                <ul>
-                  <li>Team collaboration</li>
-                  <li>Code review processes</li>
-                  <li>Project sharing</li>
-                  <li>Pull Requests (PRs)</li>
-                  <li>CI/CD automation</li>
-                </ul>
-              </li>
-              <li>
-                <strong>Git</strong>
-                <p>Local version control system that:</p>
-                <ul>
-                  <li>Tracks code changes</li>
-                  <li>Enables version reversion</li>
-                  <li>Supports branching and merging</li>
-                  <li>Works offline</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-
-          <div className="tool-category">
             <h4>GitHub Features</h4>
             <ul>
-              <li>
-                <strong>Repositories (Repos)</strong>
-                <p>Storage spaces for:</p>
-                <ul>
-                  <li>Code</li>
-                  <li>Documentation</li>
-                  <li>Project files</li>
-                </ul>
-              </li>
-              <li>
-                <strong>Version Control</strong>
-                <ul>
-                  <li>Change tracking</li>
-                  <li>Version rollback capabilities</li>
-                </ul>
-              </li>
-              <li>
-                <strong>Collaboration Tools</strong>
-                <ul>
-                  <li>Pull Requests</li>
-                  <li>Code reviews</li>
-                  <li>Issue tracking</li>
-                </ul>
-              </li>
-              <li>
-                <strong>CI/CD</strong>
-                <ul>
-                  <li>Automated testing</li>
-                  <li>Deployment with GitHub Actions</li>
-                </ul>
-              </li>
+              <li><strong>Repositories/repos:</strong> Storage spaces for code, documentation, and project files.</li>
+              <li><strong>Version Control:</strong> Tracks changes and allows rollback to previous versions.</li>
+              <li><strong>Collaboration:</strong> Multiple devs can work on the same project using PRs & reviews.</li>
+              <li><strong>Issue Tracking:</strong> Manages bugs, tasks, and feature requests.</li>
+              <li><strong>CI/CD:</strong> Automates testing and deployment with GitHub Actions.</li>
             </ul>
           </div>
 
           <div className="tool-category">
             <h4>Git Features</h4>
             <ul>
-              <li>
-                <strong>Distributed Architecture</strong>
-                <p>Each developer maintains:</p>
-                <ul>
-                  <li>Local repository copy</li>
-                  <li>Independent working capability</li>
-                </ul>
-              </li>
-              <li>
-                <strong>Core Operations</strong>
-                <ul>
-                  <li>Branching: Independent development lines</li>
-                  <li>Merging: Combining changes from different sources</li>
-                  <li>Committing: Creating project snapshots</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-
-          <div className="tool-category">
-            <h4>Getting Started</h4>
-            <ul>
-              <li>
-                <strong>Initial Setup</strong>
-                <ul>
-                  <li>Create GitHub account</li>
-                  <li>Install IDE extensions</li>
-                </ul>
-              </li>
-              <li>
-                <strong>Project Initialization</strong>
-                <ul>
-                  <li>Create folder for personal projects</li>
-                  <li>Clone repositories for enterprise work</li>
-                  <li>Publish branches</li>
-                </ul>
-              </li>
-              <li>
-                <strong>Best Practices</strong>
-                <ul>
-                  <li>Regular commits</li>
-                  <li>Utilize source control features</li>
-                  <li>Follow enterprise workflows</li>
-                </ul>
-              </li>
+              <li><strong>Distributed architecture:</strong> Each dev has a local copy of the repo; working independently</li>
+              <li><strong>Branching:</strong> Branches represent independent lines of development.</li>
+              <li><strong>Merging:</strong> Changes from a remote repository can be merged into a working branch.</li>
+              <li><strong>Committing:</strong> Snapshots of project history & staged files are marked committed.</li>
+              <li><strong>Terminal Command Codes:</strong> Cheat Sheet</li>
             </ul>
           </div>
 
           <div className="tool-category">
             <h4>Additional Resources</h4>
             <ul>
-              <li>
-                <strong>AI Tools</strong>
-                <ul>
-                  <li>GitHub Copilot</li>
-                  <li>Project Padawan</li>
-                </ul>
-              </li>
-              <li>
-                <strong>Learning Resources</strong>
-                <ul>
-                  <li>GitHub Community Blog</li>
-                  <li>GitHub Newsletter</li>
-                  <li>Comprehensive Git & GitHub Tutorial (1 Hour)</li>
-                </ul>
-              </li>
+              <li><strong>AI:</strong> Copilot & Project Padawan</li>
+              <li><strong>Community:</strong> Blog & Newsletter</li>
+              <li><strong>In-Depth Tutorial:</strong> Git & GitHub (1 Hour)</li>
             </ul>
           </div>
         </section>
