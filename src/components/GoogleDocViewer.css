@@ -48,59 +48,40 @@
 }
 
 .content-section {
-  width: 98%;
-  margin: 0 auto;
-  padding: 25px;
-  background: 
-    linear-gradient(135deg, 
-      rgba(35, 32, 50, 0.85) 0%,
-      rgba(45, 42, 65, 0.85) 50%,
-      rgba(35, 32, 50, 0.85) 100%
-    ),
-    repeating-linear-gradient(45deg,
-      rgba(255, 255, 255, 0.05) 0px,
-      rgba(255, 255, 255, 0.05) 2px,
-      transparent 2px,
-      transparent 10px
-    ),
-    radial-gradient(circle at 70% 30%, 
-      rgba(147, 112, 219, 0.1) 0%, 
-      transparent 60%
-    );
-  background-blend-mode: normal, overlay, screen;
+  background: rgba(20, 17, 35, 0.7);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border-radius: 10px;
-  box-shadow: 
-    0 2px 8px rgba(0, 0, 0, 0.2),
-    inset 0 0 40px rgba(147, 112, 219, 0.1),
-    inset 0 0 80px rgba(255, 250, 255, 0.03);
+  padding: 2rem;
+  margin: 2rem 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   box-sizing: border-box;
+}
+
+.content-section:before {
+  display: none;
+}
+
+.alien-buddy-container {
+  background: rgba(20, 17, 35, 0.7);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  overflow: hidden;
-}
-
-.content-section:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: 
-    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 45%),
-    radial-gradient(circle at 80% 80%, rgba(255, 250, 255, 0.1) 0%, transparent 45%),
-    repeating-linear-gradient(45deg, 
-      rgba(255, 255, 255, 0.025) 0px,
-      rgba(255, 255, 255, 0.025) 1px,
-      transparent 1px,
-      transparent 10px
-    );
-  pointer-events: none;
-  opacity: 0.7;
+  margin-bottom: 0.5rem;
 }
 
 .emphasis-box, .tool-category {
@@ -109,14 +90,12 @@
       rgba(45, 42, 65, 0.85) 0%,
       rgba(55, 52, 75, 0.85) 100%
     ),
-    repeating-linear-gradient(-45deg,
-      rgba(255, 255, 255, 0.05) 0px,
-      rgba(255, 255, 255, 0.05) 1px,
-      transparent 1px,
-      transparent 8px
-    ),
     radial-gradient(circle at 30% 70%, 
       rgba(147, 112, 219, 0.08) 0%, 
+      transparent 50%
+    ),
+    radial-gradient(circle at 70% 30%, 
+      rgba(255, 255, 255, 0.03) 0%, 
       transparent 50%
     );
   color: #ffffff;
@@ -128,7 +107,7 @@
 
 .emphasis-box {
   width: 90%;
-  margin: 0 0 20px 0;
+  margin: 0 auto 20px auto;
   padding: 20px;
   border-radius: 8px;
   border-left: 4px solid rgba(147, 112, 219, 0.6);
@@ -136,6 +115,7 @@
     0 2px 6px rgba(0, 0, 0, 0.2),
     inset 0 0 20px rgba(147, 112, 219, 0.1);
   box-sizing: border-box;
+  animation: float 4s ease-in-out infinite;
 }
 
 .emphasis-box h4 {
@@ -161,6 +141,10 @@
   flex: 1;
   margin: 0 15px;
   border-radius: 2px;
+}
+
+.emphasis-box::before {
+  display: none;
 }
 
 .emphasis-box ul {
@@ -208,11 +192,13 @@
 .tools-section {
   width: 98%;
   margin: 25px auto;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
   padding: 0;
   box-sizing: border-box;
+  position: relative;
 }
 
 @media (max-width: 1024px) {
@@ -235,7 +221,7 @@
 
 .tool-category {
   max-width: 800px;
-  margin: 0 auto;
+  width: 100%;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 
@@ -244,6 +230,17 @@
     inset 0 0 30px rgba(147, 112, 219, 0.08);
   transition: all 0.3s ease;
   border: 1px solid rgba(147, 112, 219, 0.4);
+  animation: float 4s ease-in-out infinite;
+  position: relative;
+}
+
+.arrow-down {
+  font-size: 40px;
+  color: #6a1b9a;
+  animation: bounce 2s ease-in-out infinite;
+  margin: 10px 0;
+  text-align: center;
+  font-weight: bold;
 }
 
 .tool-category h4 {
@@ -345,6 +342,15 @@
 
 .tool-category:nth-child(even) {
   animation: float 4s ease-in-out infinite 2s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 ul {
