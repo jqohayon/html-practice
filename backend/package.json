@@ -6,7 +6,9 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/main.js",
-    "dev": "ts-node-dev src/main.ts"
+    "dev": "ts-node-dev src/main.ts",
+    "start:prod": "node dist/main.js",
+    "postinstall": "npm run build"
   },
   "keywords": [],
   "author": "",

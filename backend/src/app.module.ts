@@ -8,15 +8,16 @@ import { Feedback } from './feedback/feedback.entity';
   imports: [
     SequelizeModule.forRoot({
       dialect: 'postgres',
-      host: 'localhost',
-      port: 5432,
-      username: 'postgres',
-      password: 'postgres',
-      database: 'feedback_db',
+      host: process.env.DATABASE_HOST || 'localhost',
+      port: parseInt(process.env.DATABASE_PORT || '5432'),
+      username: process.env.DATABASE_USER || 'postgres',
+      password: process.env.DATABASE_PASSWORD || 'postgres',
+      database: process.env.DATABASE_NAME || 'feedback',
+      models: [Feedback],
       autoLoadModels: true,
       synchronize: true,
     }),
-    SequelizeModule.forFeature([Feedback]),
+    SequelizeModule.forFeature([Feedback])
   ],
   controllers: [FeedbackController],
   providers: [FeedbackService],
