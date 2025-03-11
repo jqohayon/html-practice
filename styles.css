@@ -73,4 +73,67 @@ img:hover {
 .button:hover {
   background-color: #d4b3ff;  /* Slightly darker purple on hover */
   transform: scale(1.05);  /* Slightly enlarge on hover */
+}
+
+/* Cloud Decorations */
+.cloud {
+  position: fixed;
+  width: 100px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.cloud::before,
+.cloud::after {
+  content: '';
+  position: absolute;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+}
+
+.cloud::before {
+  width: 50px;
+  height: 50px;
+  top: -20px;
+  left: 15px;
+}
+
+.cloud::after {
+  width: 40px;
+  height: 40px;
+  top: -15px;
+  left: 45px;
+}
+
+.cloud-1 {
+  top: 20%;
+  left: -100px;
+  animation: float-right 30s linear infinite;
+}
+
+.cloud-2 {
+  top: 45%;
+  left: -150px;
+  animation: float-right 45s linear infinite;
+  transform: scale(1.5);
+}
+
+.cloud-3 {
+  top: 70%;
+  left: -80px;
+  animation: float-right 35s linear infinite;
+  transform: scale(0.8);
+}
+
+@keyframes float-right {
+  from {
+    left: -150px;
+  }
+  to {
+    left: 100%;
+  }
 } 
