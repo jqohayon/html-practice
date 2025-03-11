@@ -9,7 +9,7 @@ export class FeedbackService {
     private feedbackModel: typeof Feedback,
   ) {}
 
-  async create(feedback: { message: string }): Promise<Feedback> {
+  async create(feedback: { name?: string; message: string; email?: string }): Promise<Feedback> {
     return this.feedbackModel.create(feedback);
   }
 
