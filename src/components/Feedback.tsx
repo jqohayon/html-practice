@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './GoogleDocViewer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faComments } from '@fortawesome/free-solid-svg-icons';
+import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
 
 interface FeedbackForm {
   name: string;
@@ -88,7 +88,7 @@ const Feedback: React.FC = () => {
         marginBottom: '2rem'
       }}>
         <FontAwesomeIcon 
-          icon={faComments} 
+          icon={faLightbulb} 
           style={{
             fontSize: '2.5rem',
             color: '#6a1b9a',
