@@ -7,69 +7,60 @@ const JrEngineer: React.FC = () => {
       <h2>Software Engineer</h2>
       <div className="content-section">
         <div className="emphasis-box">
-          <p><strong>My Journey to Software Engineering</strong></p>
-          <p>This page outlines my path to becoming a software engineer in my current role. While this is a high-level overview, 
-             I'm happy to discuss deeper details and interview preparation strategies. The journey began with JS & TS fundamentals, 
+          <p>This page outlines my path to becoming a software engineer in my current role. The journey began with JS & TS fundamentals, 
              progressed through API development with NestJS, and included continuous DSA learning.</p>
         </div>
 
         <section className="tools-section">
           <div className="tool-category">
             <h4>JavaScript (JS)</h4>
-            <ul></ul>
+            <ul style={{ textAlign: 'center', listStyle: 'none', padding: 0 }}>
+              <li style={{ textAlign: 'center', paddingLeft: 0 }}>My journey began with mastering JavaScript fundamentals, the backbone of modern web development.</li>
+            </ul>
           </div>
 
           <div className="tool-category">
             <h4>TypeScript (TS)</h4>
-            <div style={{ textAlign: 'center', marginBottom: '15px' }}>
-              <strong>Learning Journey</strong>
-            </div>
-            <ul>
-              <li>
-                <ul>
-                  <li>Then I learned TS</li>
-                  <li>TS is the superscript of JS</li>
-                  <li>I took a class by Manik @ Udemy</li>
-                </ul>
-              </li>
+            <ul style={{ textAlign: 'center', listStyle: 'none', padding: 0 }}>
+              <li style={{ textAlign: 'center', paddingLeft: 0 }}>After learning the fundamentals of JS, I moved on to a Typescript course by Manik at Udemy, to master Typescript syntax.</li>
             </ul>
           </div>
 
           <div className="tool-category">
             <h4>NestJS Framework</h4>
-            <div style={{ textAlign: 'center', marginBottom: '15px' }}>
-              <strong>Essential Resources</strong>
-            </div>
             <ul>
-              <li>
-                <ul>
-                  <li>Tech Vision: NestJS Brief Intro Video</li>
-                  <li>Official NestJS Documentation</li>
-                  <li>Manik's Course on Udemy (24.5 Hours)</li>
-                </ul>
+              <li style={{ padding: '4px 0 4px 50px', position: 'relative' }}>
+                <span style={{ position: 'absolute', left: '15px', top: '50%', transform: 'translateY(-50%)', fontSize: '20px', opacity: '0.7' }}>☁️</span>
+                Official NestJS Documentation
+              </li>
+              <li style={{ padding: '4px 0 4px 50px', position: 'relative' }}>
+                <span style={{ position: 'absolute', left: '15px', top: '50%', transform: 'translateY(-50%)', fontSize: '20px', opacity: '0.7' }}>☁️</span>
+                Manik's Course on Udemy
               </li>
             </ul>
           </div>
 
           <div className="tool-category">
-            <h4>Data Structures & Algorithms (DSA)</h4>
-            <ul>
-              <li>W3 Schools - Comprehensive DSA coverage</li>
+            <h4>Data Structures & Algorithms</h4>
+            <ul style={{ textAlign: 'center', listStyle: 'none', padding: 0 }}>
+              <li style={{ textAlign: 'center', paddingLeft: 0 }}>Data Structures and Algorithms (DSA) are crucial for backend engineers as they help optimize code for efficiency, ensuring systems perform well under varying loads. Additionally, DSA knowledge is essential for problem-solving, database optimization, and system design, enabling engineers to create robust and maintainable backend solutions.</li>
             </ul>
           </div>
 
           <div className="tool-category">
             <h4>Building REST APIs</h4>
-            <div style={{ textAlign: 'center', marginBottom: '15px' }}>
-              <strong>Enterprise Skills</strong>
-            </div>
             <ul>
-              <li>
-                <ul>
-                  <li>Build functional APIs</li>
-                  <li>Connect APIs to databases</li>
-                  <li>Implement proper API architecture</li>
-                </ul>
+              <li style={{ padding: '4px 0 4px 50px', position: 'relative' }}>
+                <span style={{ position: 'absolute', left: '15px', top: '50%', transform: 'translateY(-50%)', fontSize: '20px', opacity: '0.7' }}>☁️</span>
+                Build functional APIs
+              </li>
+              <li style={{ padding: '4px 0 4px 50px', position: 'relative' }}>
+                <span style={{ position: 'absolute', left: '15px', top: '50%', transform: 'translateY(-50%)', fontSize: '20px', opacity: '0.7' }}>☁️</span>
+                Connect APIs to databases
+              </li>
+              <li style={{ padding: '4px 0 4px 50px', position: 'relative' }}>
+                <span style={{ position: 'absolute', left: '15px', top: '50%', transform: 'translateY(-50%)', fontSize: '20px', opacity: '0.7' }}>☁️</span>
+                Implement proper API architecture
               </li>
             </ul>
           </div>

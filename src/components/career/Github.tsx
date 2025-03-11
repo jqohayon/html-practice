@@ -40,9 +40,14 @@ const Github: React.FC = () => {
           <div className="tool-category">
             <h4>Additional Resources</h4>
             <ul>
-              <li><strong>AI:</strong> Copilot & Project Padawan</li>
-              <li><strong>Community:</strong> Blog & Newsletter</li>
-              <li><strong>In-Depth Tutorial:</strong> Git & GitHub (1 Hour)</li>
+              <li style={{ padding: '4px 0 4px 50px', position: 'relative' }}>
+                <span style={{ position: 'absolute', left: '15px', top: '50%', transform: 'translateY(-50%)', fontSize: '20px', opacity: '0.7' }}>☁️</span>
+                <strong>AI:</strong> Copilot & Project Padawan
+              </li>
+              <li style={{ padding: '4px 0 4px 50px', position: 'relative' }}>
+                <span style={{ position: 'absolute', left: '15px', top: '50%', transform: 'translateY(-50%)', fontSize: '20px', opacity: '0.7' }}>☁️</span>
+                <strong>Community:</strong> Blog & Newsletter
+              </li>
             </ul>
           </div>
         </section>

@@ -38,49 +38,6 @@ const Resources: React.FC = () => {
               <li><strong>Recommended Course:</strong> Manik on Udemy</li>
             </ul>
           </div>
-
-          <div className="tool-category">
-            <h4>GitHub Mastery</h4>
-            <ul>
-              <li>Enterprise Branching Strategies
-                <ul>
-                  <li>Workflow fundamentals</li>
-                  <li>Merge vs Rebase</li>
-                  <li>Pull vs Fetch</li>
-                </ul>
-              </li>
-              <li>Kevin Stratvert's GitHub Guides</li>
-              <li>Building your coding activity</li>
-              <li>Project showcase best practices</li>
-            </ul>
-          </div>
-
-          <div className="tool-category">
-            <h4>Professional Tech Stack</h4>
-            <ul>
-              <li><strong>ORM:</strong> Sequelize / TypeORM</li>
-              <li><strong>Logging:</strong> DataDog</li>
-              <li><strong>Containerization:</strong>
-                <ul>
-                  <li>Docker</li>
-                  <li>Kubernetes</li>
-                  <li>Rancher</li>
-                </ul>
-              </li>
-              <li><strong>Cloud Platform:</strong> AWS</li>
-              <li><strong>API Testing:</strong> Postman</li>
-            </ul>
-          </div>
-
-          <div className="tool-category">
-            <h4>AI Development Tools</h4>
-            <ul>
-              <li>VSCode with GitHub Copilot</li>
-              <li>Windsurf</li>
-              <li>Cursor</li>
-              <li><em>Check out the AI tab for detailed guides on leveraging these tools effectively!</em></li>
-            </ul>
-          </div>
         </section>
       </div>
     </div>

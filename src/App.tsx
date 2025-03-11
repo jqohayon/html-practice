@@ -4,9 +4,9 @@ import Navigation from './components/layout/Navigation';
 import Home from './components/Home';
 import Resources from './components/career/Resources';
 import LeveragingAI from './components/career/LeveragingAI';
-import CareerPaths from './components/career/CareerPaths';
 import Github from './components/career/Github';
 import JrEngineer from './components/career/JrEngineer';
+import SocialLinks from './components/SocialLinks';
 import './App.css';
 
 const App: React.FC = () => {
@@ -25,11 +25,11 @@ const App: React.FC = () => {
           <Route path="/jr-engineer" element={<JrEngineer />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/leveraging-ai" element={<LeveragingAI />} />
-          <Route path="/career-paths" element={<CareerPaths />} />
           <Route path="/github" element={<Github />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
+      <SocialLinks />
     </div>
   );
 }

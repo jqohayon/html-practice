@@ -9,10 +9,12 @@
 .navigation {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 25px;
-  padding: 15px;
+  padding: 0 15px;
   margin: 0 auto 20px;
   width: 98%;
+  height: 60px;
   background: rgba(20, 17, 35, 0.95);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
@@ -32,6 +34,9 @@
   border: none;
   padding: 0;
   position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .nav-link:hover {
