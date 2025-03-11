@@ -38,7 +38,7 @@ const Resources: React.FC = () => {
               <li style={{ fontSize: '1.1rem' }}>
                 <strong>David Farley</strong> - Modern Software Engineering
                 <ul>
-                  <li style={{ padding: '4px 0 4px 50px', position: 'relative', fontSize: '1rem' }}>
+                  <li style={{ padding: '4px 0 4px 50px', position: 'relative', fontSize: '1.1rem' }}>
                     <span style={{ position: 'absolute', left: '15px', top: '50%', transform: 'translateY(-50%)', fontSize: '20px', opacity: '0.7' }}>☁️</span>
                     A foundational read that taught me golden standards, mindset development, and pracitcal approaches.
                   </li>
@@ -61,7 +61,7 @@ const Resources: React.FC = () => {
               <li style={{ fontSize: '1.1rem' }}>
                 <strong>Vlad Knononov</strong> - Learning Domain-Driven Design
                 <ul>
-                  <li style={{ padding: '4px 0 4px 50px', position: 'relative', fontSize: '1rem' }}>
+                  <li style={{ padding: '4px 0 4px 50px', position: 'relative', fontSize: '1.1rem' }}>
                     <span style={{ position: 'absolute', left: '15px', top: '50%', transform: 'translateY(-50%)', fontSize: '20px', opacity: '0.7' }}>☁️</span>
                     Current reading to understand the deeper concepts & importance of DDD.
                   </li>
