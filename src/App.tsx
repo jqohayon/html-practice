@@ -6,6 +6,7 @@ import Resources from './components/career/Resources';
 import LeveragingAI from './components/career/LeveragingAI';
 import Github from './components/career/Github';
 import JrEngineer from './components/career/JrEngineer';
+import Future from './components/career/Future';
 import SocialLinks from './components/SocialLinks';
 import './App.css';
 
@@ -26,6 +27,7 @@ const App: React.FC = () => {
           <Route path="/resources" element={<Resources />} />
           <Route path="/leveraging-ai" element={<LeveragingAI />} />
           <Route path="/github" element={<Github />} />
+          <Route path="/future" element={<Future />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>

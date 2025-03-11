@@ -18,6 +18,9 @@ const Navigation: React.FC = () => {
       <NavLink to="/github" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
         Github
       </NavLink>
+      <NavLink to="/future" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+        Future
+      </NavLink>
       <NavLink to="/resources" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
         Resources
       </NavLink>
