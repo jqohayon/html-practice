@@ -7,13 +7,17 @@
       // Single Page Apps for GitHub Pages
       // MIT License
       // https://github.com/rafgraph/spa-github-pages
-      var pathSegmentsToKeep = 1;
-
+      var segmentCount = 1;
       var l = window.location;
+      
+      // GitHub Pages serves user pages from username.github.io/
+      // and project pages from username.github.io/project/
+      // For project pages we need to keep the first segment (project name)
+      
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
         (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
         l.hash
       );
@@ -22,7 +26,7 @@
   <body>
     <noscript>
       <h1>Redirecting...</h1>
-      <p>If you are not redirected, please <a href="/">click here</a>.</p>
+      <p>If you are not redirected, please <a href="/jacqstack/">click here</a>.</p>
     </noscript>
   </body>
 </html> 
