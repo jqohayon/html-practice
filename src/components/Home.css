@@ -108,4 +108,117 @@
 .social-link:hover {
   transform: translateY(-3px);
   color: #ffffff;
+}
+
+.home-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.home-button {
+  min-width: 140px;
+}
+
+.primary-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.primary-button::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 60%);
+  opacity: 0;
+  transform: scale(0.5);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.primary-button:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Enhanced Mobile Responsiveness */
+@media (max-width: 768px) {
+  .home {
+    padding: 1.5rem;
+  }
+  
+  .astronaut-image {
+    width: 250px;
+  }
+  
+  .home h1 {
+    font-size: 2.2rem;
+  }
+  
+  .home p {
+    font-size: 1.1rem;
+  }
+  
+  .social-links {
+    padding: 0.75rem;
+  }
+  
+  .social-link {
+    font-size: 14px;
+    padding: 0 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding: 1.25rem 1rem;
+    border-radius: 8px;
+  }
+  
+  .astronaut-image {
+    width: 200px;
+    margin: 0.75rem 0 1.5rem;
+  }
+  
+  .home h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .home p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .home-buttons {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .home-button {
+    width: 100%;
+    max-width: 200px;
+    margin-right: 0 !important;
+  }
+  
+  .social-links {
+    padding: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .social-link {
+    font-size: 13px;
+    padding: 0 0.5rem;
+  }
+  
+  .social-link:not(:last-child)::after {
+    right: -0.5rem;
+    font-size: 10px;
+  }
 } 

@@ -285,3 +285,64 @@ blockquote {
     right: 100%;
   }
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+    margin-top: 60px;
+  }
+  
+  .cloud {
+    opacity: 0.4; /* Reduce cloud opacity on mobile for better readability */
+  }
+  
+  .content-section {
+    padding: 1.5rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .welcome-message {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 0.75rem;
+    margin-top: 50px;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+  }
+  
+  p {
+    font-size: 0.95rem;
+  }
+  
+  .content-section {
+    padding: 1.25rem;
+    border-radius: 8px;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .welcome-message {
+    font-size: 1.1rem;
+  }
+  
+  /* Hide some decorative clouds on very small screens */
+  .cloud-3, .cloud-5 {
+    display: none;
+  }
+}
