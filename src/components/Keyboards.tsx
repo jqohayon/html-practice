@@ -46,7 +46,7 @@ const Keyboards: React.FC = () => {
             </tr>
           </thead>
           <tbody>
-            {KEYBOARDS.map((keyboard) => (
+            {KEYBOARDS.map((keyboard: Keyboard) => (
               <tr key={keyboard.id}>
                 <td>{keyboard.make}</td>
                 <td>{keyboard.model}</td>
