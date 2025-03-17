@@ -8,6 +8,7 @@ import Github from './components/career/Github';
 import JrEngineer from './components/career/JrEngineer';
 import Future from './components/career/Future';
 import Feedback from './components/Feedback';
+import Keyboards from './components/Keyboards';
 import SocialLinks from './components/SocialLinks';
 import './App.css';
 
@@ -29,6 +30,7 @@ const App: React.FC = () => {
           <Route path="/leveraging-ai" element={<LeveragingAI />} />
           <Route path="/github" element={<Github />} />
           <Route path="/future" element={<Future />} />
+          <Route path="/keyboards" element={<Keyboards />} />
           <Route path="/feedback" element={<Feedback />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

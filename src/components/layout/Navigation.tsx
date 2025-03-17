@@ -1,34 +1,31 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaHome, FaRocket, FaLightbulb, FaGithub, FaBook } from 'react-icons/fa';
+import { FaHome } from 'react-icons/fa';
 import '../Navigation.css';
 
 const Navigation: React.FC = () => {
   return (
     <nav className="navigation">
       <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} end>
-        <FaHome size={20} style={{ marginRight: '4px' }} />
-        <span className="nav-text">Home</span>
+        <FaHome size={24} />
       </NavLink>
-      <NavLink to="/jr-engineer" className={({ isActive }) => isActive ? 'nav-link active icon-only-mobile' : 'nav-link icon-only-mobile'}>
-        <FaRocket size={18} style={{ marginRight: '4px' }} />
-        <span>Path</span>
+      <NavLink to="/jr-engineer" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+        Path
       </NavLink>
-      <NavLink to="/leveraging-ai" className={({ isActive }) => isActive ? 'nav-link active icon-only-mobile' : 'nav-link icon-only-mobile'}>
-        <FaLightbulb size={18} style={{ marginRight: '4px' }} />
-        <span>AI</span>
+      <NavLink to="/leveraging-ai" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+        AI
       </NavLink>
-      <NavLink to="/github" className={({ isActive }) => isActive ? 'nav-link active icon-only-mobile' : 'nav-link icon-only-mobile'}>
-        <FaGithub size={18} style={{ marginRight: '4px' }} />
-        <span>Github</span>
+      <NavLink to="/github" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+        Github
       </NavLink>
-      <NavLink to="/future" className={({ isActive }) => isActive ? 'nav-link active icon-only-mobile' : 'nav-link icon-only-mobile'}>
-        <FaRocket size={18} style={{ marginRight: '4px' }} />
-        <span>Future</span>
+      <NavLink to="/future" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+        Future
       </NavLink>
-      <NavLink to="/resources" className={({ isActive }) => isActive ? 'nav-link active icon-only-mobile' : 'nav-link icon-only-mobile'}>
-        <FaBook size={18} style={{ marginRight: '4px' }} />
-        <span>Resources</span>
+      <NavLink to="/keyboards" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+        Keyboards
+      </NavLink>
+      <NavLink to="/resources" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+        Resources
       </NavLink>
     </nav>
   );
