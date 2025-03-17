@@ -21,6 +21,9 @@ const Navigation: React.FC = () => {
       <NavLink to="/future" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
         Future
       </NavLink>
+      <NavLink to="/keyboards" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+        Keyboards
+      </NavLink>
       <NavLink to="/resources" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
         Resources
       </NavLink>
