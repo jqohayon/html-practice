@@ -30,51 +30,53 @@ const KEYBOARDS: Keyboard[] = [
 
 const Keyboards: React.FC = () => {
   return (
-    <div className="keyboards-fullpage">
-      <div className="keyboard-header">
-        <h1>Keyboards</h1>
-        <div className="keyboard-divider"></div>
-        <FaKeyboard className="keyboard-icon" />
-        <p className="keyboard-subtitle">Clickity Clackety</p>
-      </div>
+    <div className="app">
+      <div className="keyboards-fullpage">
+        <div className="keyboard-header">
+          <h1>Keyboards</h1>
+          <div className="keyboard-divider"></div>
+          <FaKeyboard className="keyboard-icon" />
+          <p className="keyboard-subtitle">Clickity Clackety</p>
+        </div>
 
-      <div className="keyboard-table-container">
-        <table className="keyboards-table">
-          <thead>
-            <tr>
-              <th>Make</th>
-              <th>Model</th>
-              <th>Color</th>
-              <th>Switch Type</th>
-              <th>Switch Model</th>
-              <th>Size</th>
-              <th>Link</th>
-              <th>RGB</th>
-            </tr>
-          </thead>
-          <tbody>
-            {KEYBOARDS.map((keyboard: Keyboard) => (
-              <tr key={keyboard.id}>
-                <td>{keyboard.make}</td>
-                <td>{keyboard.model}</td>
-                <td>{keyboard.color}</td>
-                <td>{keyboard.switch1}</td>
-                <td>{keyboard.switch2}</td>
-                <td className="center-align">{keyboard.size}</td>
-                <td className="center-align">
-                  {keyboard.link ? (
-                    <a href={keyboard.link} target="_blank" rel="noopener noreferrer" className="visit-link">
-                      Visit
-                    </a>
-                  ) : (
-                    "N/A"
-                  )}
-                </td>
-                <td className="center-align">{keyboard.rgb}</td>
+        <div className="keyboard-table-container">
+          <table className="keyboards-table">
+            <thead>
+              <tr>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Color</th>
+                <th>Switch Type</th>
+                <th>Switch Model</th>
+                <th>Size</th>
+                <th>Link</th>
+                <th>RGB</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {KEYBOARDS.map((keyboard: Keyboard) => (
+                <tr key={keyboard.id}>
+                  <td>{keyboard.make}</td>
+                  <td>{keyboard.model}</td>
+                  <td>{keyboard.color}</td>
+                  <td>{keyboard.switch1}</td>
+                  <td>{keyboard.switch2}</td>
+                  <td className="center-align">{keyboard.size}</td>
+                  <td className="center-align">
+                    {keyboard.link ? (
+                      <a href={keyboard.link} target="_blank" rel="noopener noreferrer" className="visit-link">
+                        Visit
+                      </a>
+                    ) : (
+                      "N/A"
+                    )}
+                  </td>
+                  <td className="center-align">{keyboard.rgb}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );

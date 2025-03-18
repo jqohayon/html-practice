@@ -423,9 +423,10 @@ a[href="/feedback"],
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
   background: transparent;
+  position: relative;
+  z-index: 1;
 }
 
 .keyboard-header {
@@ -478,6 +479,7 @@ a[href="/feedback"],
   position: relative;
   left: -144px;
   background: transparent;
+  z-index: 2;
 }
 
 .keyboards-table {
@@ -488,6 +490,7 @@ a[href="/feedback"],
   background: transparent;
   margin: 0 auto;
   font-size: 0.9rem;
+  position: relative;
 }
 
 .keyboards-table th {
