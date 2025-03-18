@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaKeyboard } from 'react-icons/fa';
 
 // Define the keyboard data structure
 interface Keyboard {
@@ -29,47 +30,53 @@ const KEYBOARDS: Keyboard[] = [
 
 const Keyboards: React.FC = () => {
   return (
-    <div className="keyboards-container">
-      <h1>Keyboards Collection</h1>
-      <div className="keyboards-table-wrapper">
-        <div className="keyboards-table-container">
-          <table className="keyboards-table">
-            <thead>
-              <tr>
-                <th>Make</th>
-                <th>Model</th>
-                <th>Color</th>
-                <th>Switch Type</th>
-                <th>Switch Model</th>
-                <th>Size</th>
-                <th>Link</th>
-                <th>RGB</th>
-              </tr>
-            </thead>
-            <tbody>
-              {KEYBOARDS.map((keyboard: Keyboard) => (
-                <tr key={keyboard.id}>
-                  <td>{keyboard.make}</td>
-                  <td>{keyboard.model}</td>
-                  <td>{keyboard.color}</td>
-                  <td>{keyboard.switch1}</td>
-                  <td>{keyboard.switch2}</td>
-                  <td>{keyboard.size}</td>
-                  <td className="link-cell">
-                    {keyboard.link ? (
-                      <a href={keyboard.link} target="_blank" rel="noopener noreferrer" className="visit-link">
-                        Visit
-                      </a>
-                    ) : (
-                      "N/A"
-                    )}
-                  </td>
-                  <td>{keyboard.rgb}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+    <div className="keyboards-container content-section">
+      <div className="section-header">
+        <h1>Keyboards</h1>
+        <hr className="header-divider" />
+        <div className="subtitle-container">
+          <h2>Clickity Clackety</h2>
+          <FaKeyboard size={24} style={{ marginLeft: '10px', color: '#9370DB' }} />
         </div>
+      </div>
+
+      <div className="keyboards-table-container">
+        <table className="keyboards-table">
+          <thead>
+            <tr>
+              <th style={{ width: '8%' }}>Make</th>
+              <th style={{ width: '16%' }}>Model</th>
+              <th style={{ width: '16%' }}>Color</th>
+              <th style={{ width: '14%' }}>Switch Type</th>
+              <th style={{ width: '14%' }}>Switch Model</th>
+              <th style={{ width: '8%' }}>Size</th>
+              <th style={{ width: '12%' }}>Link</th>
+              <th style={{ width: '8%' }}>RGB</th>
+            </tr>
+          </thead>
+          <tbody>
+            {KEYBOARDS.map((keyboard: Keyboard) => (
+              <tr key={keyboard.id}>
+                <td>{keyboard.make}</td>
+                <td>{keyboard.model}</td>
+                <td>{keyboard.color}</td>
+                <td>{keyboard.switch1}</td>
+                <td>{keyboard.switch2}</td>
+                <td style={{ textAlign: 'center' }}>{keyboard.size}</td>
+                <td style={{ textAlign: 'center' }}>
+                  {keyboard.link ? (
+                    <a href={keyboard.link} target="_blank" rel="noopener noreferrer" className="visit-link">
+                      Visit
+                    </a>
+                  ) : (
+                    "N/A"
+                  )}
+                </td>
+                <td style={{ textAlign: 'center' }}>{keyboard.rgb}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );
