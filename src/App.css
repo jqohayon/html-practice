@@ -316,9 +316,9 @@ blockquote {
 
 .keyboards-table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   font-family: 'Poppins', sans-serif;
-  table-layout: fixed;
 }
 
 .keyboards-table th {
@@ -330,16 +330,63 @@ blockquote {
   position: sticky;
   top: 0;
   white-space: nowrap;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .keyboards-table td {
   padding: 12px 15px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: #d1c4e9;
+  word-break: normal;
+  white-space: normal;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .keyboards-table tr:hover {
   background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Column-specific widths */
+.keyboards-table th:nth-child(1), 
+.keyboards-table td:nth-child(1) {
+  width: 10%;
+}
+
+.keyboards-table th:nth-child(2), 
+.keyboards-table td:nth-child(2) {
+  width: 12%;
+}
+
+.keyboards-table th:nth-child(3), 
+.keyboards-table td:nth-child(3) {
+  width: 12%;
+}
+
+.keyboards-table th:nth-child(4), 
+.keyboards-table td:nth-child(4) {
+  width: 12%;
+}
+
+.keyboards-table th:nth-child(5), 
+.keyboards-table td:nth-child(5) {
+  width: 12%;
+}
+
+.keyboards-table th:nth-child(6), 
+.keyboards-table td:nth-child(6) {
+  width: 8%;
+}
+
+.keyboards-table th:nth-child(7), 
+.keyboards-table td:nth-child(7) {
+  width: 15%;
+}
+
+.keyboards-table th:nth-child(8), 
+.keyboards-table td:nth-child(8) {
+  width: 8%;
 }
 
 .link-cell {
