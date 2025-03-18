@@ -469,6 +469,9 @@ a[href="/feedback"],
   width: 75%;
   max-width: 1100px;
   margin: 0 auto;
+  margin-right: 192px; /* ~2 inches, assuming 96px/inch */
+  position: relative;
+  left: -96px; /* Additional shift left */
 }
 
 /* Update Keyboards Table Styles */
