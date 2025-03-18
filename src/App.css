@@ -316,9 +316,11 @@ blockquote {
 
 .keyboards-table {
   width: 100%;
+  min-width: 1000px;
   border-collapse: separate;
   border-spacing: 0;
   font-family: 'Poppins', sans-serif;
+  table-layout: fixed;
 }
 
 .keyboards-table th {
@@ -339,7 +341,6 @@ blockquote {
   color: #d1c4e9;
   word-break: normal;
   white-space: normal;
-  max-width: 150px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -348,45 +349,55 @@ blockquote {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-/* Column-specific widths */
+/* Column-specific widths - increased for better spacing */
 .keyboards-table th:nth-child(1), 
 .keyboards-table td:nth-child(1) {
   width: 10%;
+  min-width: 100px;
 }
 
 .keyboards-table th:nth-child(2), 
 .keyboards-table td:nth-child(2) {
-  width: 12%;
+  width: 15%;
+  min-width: 140px;
 }
 
 .keyboards-table th:nth-child(3), 
 .keyboards-table td:nth-child(3) {
-  width: 12%;
+  width: 15%;
+  min-width: 130px;
 }
 
 .keyboards-table th:nth-child(4), 
 .keyboards-table td:nth-child(4) {
   width: 12%;
+  min-width: 120px;
 }
 
 .keyboards-table th:nth-child(5), 
 .keyboards-table td:nth-child(5) {
   width: 12%;
+  min-width: 120px;
 }
 
 .keyboards-table th:nth-child(6), 
 .keyboards-table td:nth-child(6) {
   width: 8%;
+  min-width: 80px;
 }
 
 .keyboards-table th:nth-child(7), 
 .keyboards-table td:nth-child(7) {
   width: 15%;
+  min-width: 110px;
+  text-align: center;
 }
 
 .keyboards-table th:nth-child(8), 
 .keyboards-table td:nth-child(8) {
-  width: 8%;
+  width: 10%;
+  min-width: 80px;
+  text-align: center;
 }
 
 .link-cell {
