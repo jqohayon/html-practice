@@ -424,6 +424,8 @@ a[href="/feedback"],
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
+  background: transparent;
 }
 
 .keyboard-header {
@@ -433,6 +435,7 @@ a[href="/feedback"],
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: transparent;
 }
 
 .keyboard-header h1 {
@@ -471,18 +474,18 @@ a[href="/feedback"],
   width: 60%;
   max-width: 900px;
   margin: 0 auto;
-  margin-right: 240px; /* ~2.5 inches, assuming 96px/inch */
+  margin-right: 240px;
   position: relative;
-  left: -144px; /* Move 1.5 inches left (original 1 inch + additional 0.5 inch) */
+  left: -144px;
+  background: transparent;
 }
 
-/* Update Keyboards Table Styles */
 .keyboards-table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: transparent;
+  background: transparent;
   margin: 0 auto;
   font-size: 0.9rem;
 }
@@ -493,14 +496,19 @@ a[href="/feedback"],
   text-align: left;
   padding: 10px;
   font-weight: 500;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .keyboards-table td {
   padding: 10px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: #d1c4e9;
   background-color: rgba(40, 30, 60, 0.6);
+  word-break: normal;
+  white-space: normal;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .keyboards-table tr:hover td {
