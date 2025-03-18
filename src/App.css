@@ -436,42 +436,44 @@ a[href="/feedback"],
 }
 
 .keyboard-header h1 {
-  color: #ffffff;
-  font-size: 2.2rem;
-  margin-bottom: 10px;
-  font-weight: 500;
+  color: #ffd700;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: 'Indie Flower', cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .keyboard-divider {
-  width: 180px;
+  width: 80%;
   height: 2px;
   background: linear-gradient(90deg, 
-    rgba(147, 112, 219, 0.2) 0%, 
-    rgba(147, 112, 219, 0.8) 50%, 
-    rgba(147, 112, 219, 0.2) 100%);
-  margin: 5px 0 15px;
+    rgba(255, 255, 255, 0) 0%, 
+    rgba(147, 112, 219, 0.6) 50%, 
+    rgba(255, 255, 255, 0) 100%);
+  margin: 15px auto 20px;
 }
 
 .keyboard-icon {
-  font-size: 2rem;
-  color: #9d6be7;
-  margin: 5px 0;
+  font-size: 2.5rem;
+  color: #9370DB;
+  margin: 15px 0;
 }
 
 .keyboard-subtitle {
-  color: #ffffff;
-  font-size: 1.2rem;
+  color: #9370DB;
+  font-size: 1.5rem;
   margin: 10px 0 0;
-  font-weight: 400;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
 }
 
 .keyboard-table-container {
   width: 60%;
   max-width: 900px;
   margin: 0 auto;
-  margin-right: 192px; /* ~2 inches, assuming 96px/inch */
+  margin-right: 240px; /* ~2.5 inches, assuming 96px/inch */
   position: relative;
-  left: -96px; /* Additional shift left */
+  left: -144px; /* Move 1.5 inches left (original 1 inch + additional 0.5 inch) */
 }
 
 /* Update Keyboards Table Styles */
