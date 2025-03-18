@@ -31,43 +31,45 @@ const Keyboards: React.FC = () => {
   return (
     <div className="keyboards-container">
       <h1>Keyboards Collection</h1>
-      <div className="keyboards-table-container">
-        <table className="keyboards-table">
-          <thead>
-            <tr>
-              <th>Make</th>
-              <th>Model</th>
-              <th>Color</th>
-              <th>Switch Type</th>
-              <th>Switch Model</th>
-              <th>Size</th>
-              <th>Link</th>
-              <th>RGB</th>
-            </tr>
-          </thead>
-          <tbody>
-            {KEYBOARDS.map((keyboard: Keyboard) => (
-              <tr key={keyboard.id}>
-                <td>{keyboard.make}</td>
-                <td>{keyboard.model}</td>
-                <td>{keyboard.color}</td>
-                <td>{keyboard.switch1}</td>
-                <td>{keyboard.switch2}</td>
-                <td>{keyboard.size}</td>
-                <td className="link-cell">
-                  {keyboard.link ? (
-                    <a href={keyboard.link} target="_blank" rel="noopener noreferrer" className="visit-link">
-                      Visit
-                    </a>
-                  ) : (
-                    "N/A"
-                  )}
-                </td>
-                <td>{keyboard.rgb}</td>
+      <div className="keyboards-table-wrapper">
+        <div className="keyboards-table-container">
+          <table className="keyboards-table">
+            <thead>
+              <tr>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Color</th>
+                <th>Switch Type</th>
+                <th>Switch Model</th>
+                <th>Size</th>
+                <th>Link</th>
+                <th>RGB</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {KEYBOARDS.map((keyboard: Keyboard) => (
+                <tr key={keyboard.id}>
+                  <td>{keyboard.make}</td>
+                  <td>{keyboard.model}</td>
+                  <td>{keyboard.color}</td>
+                  <td>{keyboard.switch1}</td>
+                  <td>{keyboard.switch2}</td>
+                  <td>{keyboard.size}</td>
+                  <td className="link-cell">
+                    {keyboard.link ? (
+                      <a href={keyboard.link} target="_blank" rel="noopener noreferrer" className="visit-link">
+                        Visit
+                      </a>
+                    ) : (
+                      "N/A"
+                    )}
+                  </td>
+                  <td>{keyboard.rgb}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );

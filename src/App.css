@@ -288,21 +288,15 @@ blockquote {
 
 /* Update Keyboards Component Styles */
 .keyboards-container {
-  max-width: 90%;
+  max-width: 95%;
   margin: 0 auto;
   padding: 20px;
-  background: rgba(20, 17, 35, 0.9);
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
 }
 
-.keyboards-container h1 {
-  color: #ffffff;
-  text-align: center;
-  margin-bottom: 30px;
-  font-family: 'Poppins', sans-serif;
+.keyboards-table-wrapper {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .keyboards-table-container {
@@ -316,7 +310,7 @@ blockquote {
 
 .keyboards-table {
   width: 100%;
-  min-width: 1000px;
+  min-width: 1200px;
   border-collapse: separate;
   border-spacing: 0;
   font-family: 'Poppins', sans-serif;
@@ -349,76 +343,71 @@ blockquote {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-/* Column-specific widths - increased for better spacing */
+/* Increase column widths */
 .keyboards-table th:nth-child(1), 
 .keyboards-table td:nth-child(1) {
-  width: 10%;
-  min-width: 100px;
+  width: 12%;
+  min-width: 120px;
 }
 
 .keyboards-table th:nth-child(2), 
 .keyboards-table td:nth-child(2) {
-  width: 15%;
-  min-width: 140px;
+  width: 18%;
+  min-width: 180px;
 }
 
 .keyboards-table th:nth-child(3), 
 .keyboards-table td:nth-child(3) {
-  width: 15%;
-  min-width: 130px;
+  width: 18%;
+  min-width: 180px;
 }
 
 .keyboards-table th:nth-child(4), 
 .keyboards-table td:nth-child(4) {
-  width: 12%;
-  min-width: 120px;
+  width: 14%;
+  min-width: 150px;
 }
 
 .keyboards-table th:nth-child(5), 
 .keyboards-table td:nth-child(5) {
-  width: 12%;
-  min-width: 120px;
+  width: 14%;
+  min-width: 150px;
 }
 
 .keyboards-table th:nth-child(6), 
 .keyboards-table td:nth-child(6) {
   width: 8%;
   min-width: 80px;
+  text-align: center;
 }
 
 .keyboards-table th:nth-child(7), 
 .keyboards-table td:nth-child(7) {
-  width: 15%;
+  width: 10%;
   min-width: 110px;
   text-align: center;
 }
 
 .keyboards-table th:nth-child(8), 
 .keyboards-table td:nth-child(8) {
-  width: 10%;
+  width: 8%;
   min-width: 80px;
-  text-align: center;
-}
-
-.link-cell {
   text-align: center;
 }
 
 .visit-link {
   display: inline-block;
-  background: rgba(107, 48, 176, 0.7);
+  padding: 5px 15px;
+  background-color: rgba(107, 48, 176, 0.6);
   color: white;
-  border: none;
   border-radius: 4px;
-  padding: 5px 10px;
-  font-size: 14px;
   text-decoration: none;
-  transition: all 0.2s;
+  transition: all 0.3s ease;
 }
 
 .visit-link:hover {
-  background: rgba(147, 112, 219, 0.9);
-  transform: scale(1.05);
+  background-color: rgba(107, 48, 176, 0.8);
+  transform: translateY(-2px);
 }
 
 /* Remove unused styles */
