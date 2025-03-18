@@ -466,8 +466,8 @@ a[href="/feedback"],
 }
 
 .keyboard-table-container {
-  width: 90%;
-  max-width: 1400px;
+  width: 75%;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -479,19 +479,20 @@ a[href="/feedback"],
   font-family: 'Poppins', sans-serif;
   background-color: transparent;
   margin: 0 auto;
+  font-size: 0.95rem;
 }
 
 .keyboards-table th {
   background-color: rgba(106, 27, 154, 0.8);
   color: white;
   text-align: left;
-  padding: 15px;
+  padding: 12px;
   font-weight: 500;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .keyboards-table td {
-  padding: 15px;
+  padding: 12px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   color: #d1c4e9;
   background-color: rgba(40, 30, 60, 0.6);
