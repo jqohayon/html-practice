@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { FaKeyboard } from 'react-icons/fa';
 
 // Define the keyboard data structure
 interface Keyboard {
@@ -24,8 +25,7 @@ const SAMPLE_KEYBOARDS: Keyboard[] = [
   { id: 8, make: 'Melgeek', model: 'Made68 Pro', color: 'Pink', switch1: 'Linear', switch2: 'Magnetic', size: '68', link: '', rgb: 'Yes' },
   { id: 9, make: 'Vortex', model: 'Hellcat', color: 'Purple', switch1: 'Linear', switch2: 'G Pro Silver', size: '65', link: '', rgb: 'Yes' },
   { id: 10, make: 'Vortex', model: 'Pok3r 2', color: 'Black', switch1: 'Linear/Tactile', switch2: 'MX Blue', size: '60', link: '', rgb: 'Yes' },
-  { id: 11, make: 'Vortex', model: 'Pok3r 3', color: 'White', switch1: 'Linear/Tactile', switch2: 'MX Red', size: '60', link: '', rgb: 'Yes' },
-  { id: 12, make: '', model: '', color: '', switch1: '', switch2: '', size: '', link: '', rgb: '' }
+  { id: 11, make: 'Vortex', model: 'Pok3r 3', color: 'White', switch1: 'Linear/Tactile', switch2: 'MX Red', size: '60', link: '', rgb: 'Yes' }
 ];
 
 const Keyboards: React.FC = () => {
@@ -53,96 +53,102 @@ const Keyboards: React.FC = () => {
   };
 
   return (
-    <div className="keyboards-container">
-      <h1>Keyboards Collection</h1>
-      <div className="keyboards-table-container">
-        <table className="keyboards-table">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Make</th>
-              <th>Model</th>
-              <th>Color</th>
-              <th>Switch Type</th>
-              <th>Switch Model</th>
-              <th>Size</th>
-              <th>Link</th>
-              <th>RGB</th>
-            </tr>
-          </thead>
-          <tbody>
-            {keyboards.map((keyboard) => (
-              <tr key={keyboard.id}>
-                <td>{keyboard.id}</td>
-                <td>
-                  <input 
-                    type="text" 
-                    value={keyboard.make} 
-                    onChange={(e) => handleCellChange(keyboard.id, 'make', e.target.value)}
-                  />
-                </td>
-                <td>
-                  <input 
-                    type="text" 
-                    value={keyboard.model} 
-                    onChange={(e) => handleCellChange(keyboard.id, 'model', e.target.value)}
-                  />
-                </td>
-                <td>
-                  <input 
-                    type="text" 
-                    value={keyboard.color} 
-                    onChange={(e) => handleCellChange(keyboard.id, 'color', e.target.value)}
-                  />
-                </td>
-                <td>
-                  <input 
-                    type="text" 
-                    value={keyboard.switch1} 
-                    onChange={(e) => handleCellChange(keyboard.id, 'switch1', e.target.value)}
-                  />
-                </td>
-                <td>
-                  <input 
-                    type="text" 
-                    value={keyboard.switch2} 
-                    onChange={(e) => handleCellChange(keyboard.id, 'switch2', e.target.value)}
-                  />
-                </td>
-                <td>
-                  <input 
-                    type="text" 
-                    value={keyboard.size} 
-                    onChange={(e) => handleCellChange(keyboard.id, 'size', e.target.value)}
-                  />
-                </td>
-                <td className="link-cell">
-                  <input 
-                    type="text" 
-                    value={keyboard.link} 
-                    onChange={(e) => handleCellChange(keyboard.id, 'link', e.target.value)}
-                  />
-                  {keyboard.link && (
-                    <a href={keyboard.link} target="_blank" rel="noopener noreferrer" className="visit-link">
-                      Visit
-                    </a>
-                  )}
-                </td>
-                <td>
-                  <input 
-                    type="text" 
-                    value={keyboard.rgb} 
-                    onChange={(e) => handleCellChange(keyboard.id, 'rgb', e.target.value)}
-                  />
-                </td>
+    <div className="app">
+      <div className="keyboards-container">
+        <div className="keyboard-header">
+          <h1>Keyboards</h1>
+          <div className="keyboard-divider"></div>
+          <FaKeyboard className="keyboard-icon" />
+          <p className="keyboard-subtitle">Clickity Clackety</p>
+        </div>
+
+        <div className="keyboard-table-container">
+          <table className="keyboards-table">
+            <thead>
+              <tr>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Color</th>
+                <th>Switch Type</th>
+                <th>Switch Model</th>
+                <th>Size</th>
+                <th>Link</th>
+                <th>RGB</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {keyboards.map((keyboard) => (
+                <tr key={keyboard.id}>
+                  <td>
+                    <input 
+                      type="text" 
+                      value={keyboard.make} 
+                      onChange={(e) => handleCellChange(keyboard.id, 'make', e.target.value)}
+                    />
+                  </td>
+                  <td>
+                    <input 
+                      type="text" 
+                      value={keyboard.model} 
+                      onChange={(e) => handleCellChange(keyboard.id, 'model', e.target.value)}
+                    />
+                  </td>
+                  <td>
+                    <input 
+                      type="text" 
+                      value={keyboard.color} 
+                      onChange={(e) => handleCellChange(keyboard.id, 'color', e.target.value)}
+                    />
+                  </td>
+                  <td>
+                    <input 
+                      type="text" 
+                      value={keyboard.switch1} 
+                      onChange={(e) => handleCellChange(keyboard.id, 'switch1', e.target.value)}
+                    />
+                  </td>
+                  <td>
+                    <input 
+                      type="text" 
+                      value={keyboard.switch2} 
+                      onChange={(e) => handleCellChange(keyboard.id, 'switch2', e.target.value)}
+                    />
+                  </td>
+                  <td>
+                    <input 
+                      type="text" 
+                      value={keyboard.size} 
+                      onChange={(e) => handleCellChange(keyboard.id, 'size', e.target.value)}
+                    />
+                  </td>
+                  <td className="link-cell">
+                    <input 
+                      type="text" 
+                      value={keyboard.link} 
+                      onChange={(e) => handleCellChange(keyboard.id, 'link', e.target.value)}
+                    />
+                    {keyboard.link && (
+                      <a href={keyboard.link} target="_blank" rel="noopener noreferrer" className="visit-link">
+                        Visit
+                      </a>
+                    )}
+                  </td>
+                  <td>
+                    <input 
+                      type="text" 
+                      value={keyboard.rgb} 
+                      onChange={(e) => handleCellChange(keyboard.id, 'rgb', e.target.value)}
+                    />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <button className="reset-button" onClick={resetToSampleData}>
+          Reset to Default Data
+        </button>
       </div>
-      <button className="reset-button" onClick={resetToSampleData}>
-        Reset to Default Data
-      </button>
     </div>
   );
 };
