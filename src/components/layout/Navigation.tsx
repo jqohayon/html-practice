@@ -16,12 +16,6 @@ const Navigation: React.FC = () => {
       <NavLink to="/jr-engineer" className={({ isActive }: NavLinkClassNameProps) => isActive ? 'nav-link active' : 'nav-link'}>
         Path
       </NavLink>
-      <NavLink to="/leveraging-ai" className={({ isActive }: NavLinkClassNameProps) => isActive ? 'nav-link active' : 'nav-link'}>
-        AI
-      </NavLink>
-      <NavLink to="/github" className={({ isActive }: NavLinkClassNameProps) => isActive ? 'nav-link active' : 'nav-link'}>
-        Github
-      </NavLink>
       <NavLink to="/future" className={({ isActive }: NavLinkClassNameProps) => isActive ? 'nav-link active' : 'nav-link'}>
         Future
       </NavLink>
